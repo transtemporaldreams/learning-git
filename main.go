@@ -8,5 +8,8 @@ import (
 func main() {
 	// print the current time
 
-	fmt.Printf("the time is: %s\n", time.Now().UTC())
+	now := time.Now()
+	
+	fmt.Printf("the time is: %s\n", now)
+	fmt.Printf("formatted: %s\n", now.Format(time.Kitchen))
 }
